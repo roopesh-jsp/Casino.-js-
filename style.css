@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,100;1,200;1,300;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(7, 63, 35), rgb(17, 80, 1));
+}
+.title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
 .board {
-  background-color: blue;
+  /* background-color: blue; */
   width: 900px;
-  margin: 200px auto;
 }
 .cont {
   background-color: antiquewhite;
@@ -19,16 +35,107 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border: 2px solid#fff;
+  font-weight: 900;
+  font-size: 23px;
 }
-.betone {
-  display: flex;
-}
-.bet1 {
-  width: 300px;
-  height: 70px;
-  background-color: rgb(130, 88, 32);
+.divx {
+  height: 75px;
+  width: 75px;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid#fff;
+  font-size: 23px;
+}
+.bets {
+  display: flex;
+}
+.bet1,
+.b2 {
+  width: 300px;
+  height: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  font-size: 25px;
+}
+.b2 {
+  width: 150px;
+}
+.heart {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(210, 47, 47);
+  position: relative;
+  transform: rotate(45deg);
+}
+.heart::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(210, 47, 47);
+  transform: translate(-50%, 0);
+  position: absolute;
+  border-radius: 50%;
+}
+.heart::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(210, 47, 47);
+  transform: translate(0, -50%);
+  position: absolute;
+  border-radius: 50%;
+}
+.black {
+  background-color: black;
+}
+.black::before {
+  background-color: black;
+}
+.black::after {
+  background-color: black;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.output {
+  background-color: transparent;
+}
+.leftside {
+  color: #fff;
+  margin-top: 50px;
+  position: relative;
+  left: 70px;
+}
+.leftside .div {
+  height: 150px;
+  width: 150px;
+}
+.spinner {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  width: 150px;
+  background: transparent;
+  color: #fff;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.winnings {
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  right: 100px;
+  border: 1px solid#d5d0d0;
+  padding: 20px;
 }
