@@ -52,6 +52,7 @@ body {
 }
 .bets {
   display: flex;
+  cursor: pointer;
 }
 .bet1,
 .b2 {
@@ -73,6 +74,7 @@ body {
   background-color: rgb(210, 47, 47);
   position: relative;
   transform: rotate(45deg);
+  cursor: pointer;
 }
 .heart::before {
   content: "";
@@ -109,16 +111,16 @@ body {
 }
 .output {
   background-color: transparent;
+  height: 150px;
+  width: 150px;
+  font-size: 40px;
 }
+
 .leftside {
   color: #fff;
   margin-top: 50px;
   position: relative;
   left: 70px;
-}
-.leftside .div {
-  height: 150px;
-  width: 150px;
 }
 .spinner {
   padding: 10px;
@@ -130,6 +132,7 @@ body {
   margin-top: 20px;
   border: 2px solid #fff;
   border-radius: 10px;
+  cursor: pointer;
 }
 .winnings {
   font-size: 20px;
