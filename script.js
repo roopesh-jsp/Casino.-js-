@@ -108,3 +108,13 @@ spinner.addEventListener("click", function () {
     title.innerHTML = "you Lost 😂😂";
   }
 });
+
+const rulesbtn = document.querySelector(".rulesbtn");
+const rulespg = document.querySelector(".rules");
+rulesbtn.addEventListener("click", function () {
+  rulespg.style.display = "block";
+});
+const back = document.querySelector(".back");
+back.addEventListener("click", function () {
+  rulespg.style.display = "none";
+});

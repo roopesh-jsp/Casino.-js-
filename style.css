@@ -142,3 +142,45 @@ body {
   border: 1px solid#d5d0d0;
   padding: 20px;
 }
+
+.rules {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgb(7, 63, 35), rgb(17, 80, 1));
+  top: 0;
+  left: 0;
+  display: none;
+}
+.rulescont {
+  margin: 50px 670px;
+  width: 210px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 100px 50px;
+  column-gap: 20px;
+  font-size: 25px;
+  border: 2px solid #fff;
+  padding: 20px;
+}
+.rulescont p {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.back,
+.rulesbtn {
+  color: #fff;
+  border: 2px solid#fff;
+  padding: 10px;
+  background-color: transparent;
+  width: 150px;
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  cursor: pointer;
+}
+.rulesbtn {
+  position: relative;
+  left: 1200px;
+  top: 30px;
+}
